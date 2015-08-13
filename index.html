@@ -1,4 +1,5 @@
 <!doctype html>
+<!--suppress HtmlFormInputWithoutLabel -->
 <html>
 <head>
     <meta charset="utf-8">
@@ -13,7 +14,53 @@
 </head>
 <body ng-app="calcApp">
 
+<section class="calculator-body" ng-controller="calcCtrl">
+    <header class="calculator-header">
+        <h1>Calculator</h1>
+        <h3><a href="http://voreny.bitbucket.org">Voreny</a></h3>
+    </header>
 
+    <div class="calculator-display">
+        <span class="calculator-display-input">
+            {{calculatorDisplay}}
+        </span>
+    </div>
+
+    <div class="calculator-controls">
+        <div class="calculator-controls-column">
+            <span class="calculator-controls-button control-button-red">AC</span>
+            <span class="calculator-controls-button">7</span>
+            <span class="calculator-controls-button">4</span>
+            <span class="calculator-controls-button">1</span>
+            <span class="calculator-controls-button">0</span>
+        </div>
+
+        <div class="calculator-controls-column">
+            <span class="calculator-controls-button control-button-red">CE</span>
+            <span class="calculator-controls-button">8</span>
+            <span class="calculator-controls-button">5</span>
+            <span class="calculator-controls-button">2</span>
+            <span class="calculator-controls-button">.</span>
+        </div>
+
+        <div class="calculator-controls-column">
+            <span class="calculator-controls-button">%</span>
+            <span class="calculator-controls-button">9</span>
+            <span class="calculator-controls-button">6</span>
+            <span class="calculator-controls-button">3</span>
+            <span class="calculator-controls-button">=</span>
+        </div>
+
+        <div class="calculator-controls-column">
+            <span class="calculator-controls-button">/</span>
+            <span class="calculator-controls-button">*</span>
+            <span class="calculator-controls-button">-</span>
+            <span class="calculator-controls-button control-button-big">
+                <span class="control-button-big-text">+</span>
+            </span>
+        </div>
+    </div>
+</section>
 
 <script src="app.js"></script>
 </body>

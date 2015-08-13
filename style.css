@@ -1,0 +1,78 @@
+.calculator-body {
+  width: 320px;
+  margin: 20px auto 0 auto;
+  border: solid 1px grey;
+  background-color: #b4bab6;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  box-shadow: 5px 5px 10px black;
+  -moz-box-shadow: 5px 5px 10px black;
+  -o-box-shadow: 5px 5px 10px black;
+  -webkit-box-shadow: 5px 5px 10px black; }
+
+.calculator-header {
+  text-align: center; }
+  .calculator-header h1 {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .calculator-header h3 {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.calculator-display-input {
+  display: block;
+  width: 90%;
+  margin: auto;
+  text-align: right;
+  padding: 5px 10px 5px 10px;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #91c57a;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  box-shadow: 0 0 6px black;
+  -moz-box-shadow: 0 0 6px black;
+  -o-box-shadow: 0 0 6px black;
+  -webkit-box-shadow: 0 0 6px black; }
+
+.calculator-controls {
+  margin-top: 10px; }
+
+.calculator-controls {
+  width: 90%;
+  margin: 15px auto 15px auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em; }
+
+.calculator-controls-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.calculator-controls-button {
+  width: 70%;
+  margin: 5px auto 3px auto;
+  height: 30px;
+  text-align: center;
+  background-color: #237cba;
+  color: white;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0 2px 3px black;
+  -moz-box-shadow: 0 2px 3px black;
+  -o-box-shadow: 0 2px 3px black;
+  -webkit-box-shadow: 0 2px 3px black;
+  cursor: pointer; }
+  .calculator-controls-button.control-button-big {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-grow: 2; }
+    .calculator-controls-button.control-button-big .control-button-big-text {
+      align-self: center; }
+  .calculator-controls-button.control-button-red {
+    background-color: #b90000; }

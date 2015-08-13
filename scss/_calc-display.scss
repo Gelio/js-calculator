@@ -1,0 +1,21 @@
+.calculator-display {
+
+}
+
+.calculator-display-input {
+  display: block;
+  width: 90%;
+  margin: auto;
+  text-align: right;
+
+  padding: 5px 10px 5px 10px;
+  font-size: 2em;
+  font-weight: bold;
+
+  background-color: #91c57a;
+
+
+  @include borderRadius(15px);
+
+  @include boxShadow(0 0 6px black);
+}

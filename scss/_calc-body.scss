@@ -1,0 +1,11 @@
+.calculator-body {
+  width: 320px;
+  margin: 20px auto 0 auto;
+
+  border: solid 1px grey;
+
+  background-color: #b4bab6;
+
+  @include borderRadius(25px);
+  @include boxShadow(5px 5px 10px black);
+}

@@ -1,0 +1,49 @@
+.calculator-controls {
+  margin-top: 10px;
+}
+
+.calculator-controls {
+  width: 90%;
+  margin: 15px auto 15px auto;
+
+  display: flex;
+  flex-direction: row;
+
+
+  font-size: 1.5em;
+}
+
+.calculator-controls-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calculator-controls-button {
+  width: 70%;
+  margin: 5px auto 3px auto;
+  height: 30px;
+  text-align: center;
+
+  background-color: #237cba;
+  color: white;
+
+  @include borderRadius(10px);
+  @include boxShadow(0 2px 3px black);
+  cursor: pointer;
+
+  &.control-button-big {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-grow: 2;
+
+    .control-button-big-text {
+      align-self: center;
+    }
+  }
+
+  &.control-button-red {
+    background-color: #b90000;
+  }
+}
