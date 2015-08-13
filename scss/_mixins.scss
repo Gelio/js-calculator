@@ -12,3 +12,11 @@
   -o-box-shadow: $val;
   -webkit-box-shadow: $val;
 }
+
+@mixin userSelect($val)
+{
+  user-select: $val;
+  -moz-user-select: $val;
+  -ms-user-select: $val;
+  -webkit-user-select: $val;
+}

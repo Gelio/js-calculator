@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body ng-app="calcApp">
+<body ng-app="calcApp" ng-controller="calcCtrl" ng-keypress="keyPressed($event)" ng-keyup="backspaceClear($event)">
 
-<section class="calculator-body" ng-controller="calcCtrl">
+<section class="calculator-body">
     <header class="calculator-header">
         <h1>Calculator</h1>
         <h3><a href="http://voreny.bitbucket.org">Voreny</a></h3>
@@ -28,34 +28,34 @@
 
     <div class="calculator-controls">
         <div class="calculator-controls-column">
-            <span class="calculator-controls-button control-button-red">AC</span>
-            <span class="calculator-controls-button">7</span>
-            <span class="calculator-controls-button">4</span>
-            <span class="calculator-controls-button">1</span>
-            <span class="calculator-controls-button">0</span>
+            <span class="calculator-controls-button control-button-red" ng-click="clearAll()">AC</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(7)">7</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(4)">4</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(1)">1</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(0)">0</span>
         </div>
 
         <div class="calculator-controls-column">
-            <span class="calculator-controls-button control-button-red">CE</span>
-            <span class="calculator-controls-button">8</span>
-            <span class="calculator-controls-button">5</span>
-            <span class="calculator-controls-button">2</span>
-            <span class="calculator-controls-button">.</span>
+            <span class="calculator-controls-button control-button-red" ng-click="clearEntry()">CE</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(8)">8</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(5)">5</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(2)">2</span>
+            <span class="calculator-controls-button" ng-click="insertDot()">.</span>
         </div>
 
         <div class="calculator-controls-column">
-            <span class="calculator-controls-button">%</span>
-            <span class="calculator-controls-button">9</span>
-            <span class="calculator-controls-button">6</span>
-            <span class="calculator-controls-button">3</span>
-            <span class="calculator-controls-button">=</span>
+            <span class="calculator-controls-button" ng-click="doPercentage()">%</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(9)">9</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(6)">6</span>
+            <span class="calculator-controls-button" ng-click="insertDigit(3)">3</span>
+            <span class="calculator-controls-button" ng-click="doMath(true)">=</span>
         </div>
 
         <div class="calculator-controls-column">
-            <span class="calculator-controls-button">/</span>
-            <span class="calculator-controls-button">*</span>
-            <span class="calculator-controls-button">-</span>
-            <span class="calculator-controls-button control-button-big">
+            <span class="calculator-controls-button" ng-click="mathOperator(3)">/</span>
+            <span class="calculator-controls-button" ng-click="mathOperator(2)">*</span>
+            <span class="calculator-controls-button"  ng-click="mathOperator(1)">-</span>
+            <span class="calculator-controls-button control-button-big"  ng-click="mathOperator(0)">
                 <span class="control-button-big-text">+</span>
             </span>
         </div>

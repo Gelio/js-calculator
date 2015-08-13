@@ -45,7 +45,11 @@
   margin: 15px auto 15px auto;
   display: flex;
   flex-direction: row;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none; }
 
 .calculator-controls-column {
   display: flex;
